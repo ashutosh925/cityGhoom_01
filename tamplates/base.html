@@ -1,0 +1,126 @@
+<!-- <!doctype html> -->
+<html class="no-js" lang="zxx">
+
+<head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>NewWEb</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static\style.css">
+    <link rel="stylesheet" href="static\product.css">
+    <link rel="stylesheet" href="static\footertag.css">
+    <link rel="stylesheet" href="static\kitchen.css">
+    <link rel="stylesheet" href="static\index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'assets/flaticon/flaticon.css' %}">
+    <a href="https://www.flaticon.com/free-icons/wishlist" title="wishlist icons"></a>
+    <link rel="stylesheet" href="{% static 'assets/css/font-awesome-pro.css' %}">
+
+
+    <!-- Place favicon.ico in the root directory -->
+</head>
+
+<body>
+    {% include 'header.html' %}
+
+
+    {% block content %}
+
+
+
+    {% endblock %}
+
+    {% include 'footer.html' %}
+
+
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById("sidebar-menu");
+            const navbar = document.querySelector(".navbar");
+
+            if (sidebar.style.width === "0px") {
+                sidebar.style.width = "150px";
+
+            } else {
+                sidebar.style.width = "0px";
+
+            }
+
+        }
+
+        function getExactLocation() {
+            const pincode = document.getElementById('pincode-input').value;
+            const apiKey = 'YOUR_GOOGLE_MAPS_API_KEY';
+            const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${pincode}&key=${apiKey}`;
+
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.results.length > 0) {
+                        const location = data.results[0].formatted_address;
+                        document.getElementById('location-details').innerText = `Exact Location: ${location}`;
+                    } else {
+                        document.getElementById('location-details').innerText = 'Location not found for this pincode.';
+                    }
+                })
+                .catch(error => console.error('Error fetching location:', error));
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const container = document.querySelector('.image-gallery');
+            const scrollingContainer = document.querySelector('.scrolling-container');
+            let isMouseDown = false;
+            let startX;
+            let scrollLeft;
+
+            container.addEventListener('mousedown', (e) => {
+                isMouseDown = true;
+                startX = e.pageX - scrollingContainer.offsetLeft;
+                scrollLeft = scrollingContainer.scrollLeft;
+            });
+
+            container.addEventListener('mouseleave', () => {
+                isMouseDown = false;
+            });
+
+            container.addEventListener('mouseup', () => {
+                isMouseDown = false;
+            });
+
+            container.addEventListener('mousemove', (e) => {
+                if (!isMouseDown) return;
+                e.preventDefault();
+                const x = e.pageX - scrollingContainer.offsetLeft;
+                const walk = (x - startX) * 1; // Adjust scrolling speed here
+                scrollingContainer.style.transform = `translateX(${-scrollLeft + walk}px)`;
+            });
+
+            // Smooth scrolling on touch devices
+            container.addEventListener('touchstart', (e) => {
+                isMouseDown = true;
+                startX = e.touches[0].pageX - scrollingContainer.offsetLeft;
+                scrollLeft = scrollingContainer.scrollLeft;
+            });
+
+            container.addEventListener('touchend', () => {
+                isMouseDown = false;
+            });
+
+            container.addEventListener('touchmove', (e) => {
+                if (!isMouseDown) return;
+                e.preventDefault();
+                const x = e.touches[0].pageX - scrollingContainer.offsetLeft;
+                const walk = (x - startX) * 1; // Adjust scrolling speed here
+                scrollingContainer.style.transform = `translateX(${-scrollLeft + walk}px)`;
+            });
+        });
+        
+    </script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

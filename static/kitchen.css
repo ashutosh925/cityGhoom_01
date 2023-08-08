@@ -1,0 +1,83 @@
+#kitchen {
+    width: 100%;
+    display: flex;
+    height: auto;
+    margin-top: 10px;
+    position: relative;
+
+
+}
+
+.kit-offer {
+    width: 20%;
+    margin-top: 10px;
+    /* margin-right: 10px; */
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 1px 0px rgb(202, 199, 199);
+}
+
+.kit-product {
+    width: 75%;
+    margin-top: 10px;
+    /* background-color: #F5F5F5; */
+    margin-bottom: 10px;
+
+
+}
+
+.kit1 {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.kit2 {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.kit3 {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.kit1-offer {
+    /* margin: 10px; */
+    /* width: 100%; */
+
+    width: auto;
+    height: auto;
+    border: 1px solid rgb(203, 242, 203);
+    padding: 20px;
+
+}
+
+.kit1-offer:hover {
+    border: 1px solid #F7A21A;
+}
+
+.kit1-offer img {
+    width: 200px;
+    height: 250px;
+}
+
+.kit1-offer span {
+    text-decoration: line-through;
+    color: rgb(237, 186, 92);
+    margin-right: 10px;
+}
+
+.kit1-offer p {
+    margin-top: 8px;
+}
+

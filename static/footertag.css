@@ -1,0 +1,108 @@
+/* // security // */
+#Security {
+    margin: 20px;
+    padding: 30px;
+    line-height: 2.5;
+}
+.sec1 h6 {
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sec1 h5 {
+    text-align: start;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sec1 h4 {
+    text-align: start;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.sec1 h3 {
+    text-align: start;
+    font-size: medium;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+}
+
+/* // about // */
+
+#about h4{
+    margin-top: 10px;
+}
+.scroll {
+    margin: 20px;
+    padding: 30px;
+    
+}
+.scroll h5 {
+    text-align: center;
+    font-size: x-large;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #F7A21A;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.scroll h6 {
+    margin-bottom: 50px;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.scroll h3 {
+    text-align: center;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+
+/* // payment // */
+
+#payment {
+    margin: 20px;
+    padding: 30px;
+}
+#payment h3 {
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#payment h5 {
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #F7A21A;
+}
+#payment h6 {
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+
+/* // shipping // */
+
+#ship {
+    margin: 20px;
+    padding: 30px;
+}
+#ship h4 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#ship h5 {
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 20px;
+    font-size: medium;
+
+}

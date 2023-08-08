@@ -1,0 +1,78 @@
+{% load static %}
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="static\images\white logo2.png" alt="Your Logo">
+        </div>
+        <div class="info">
+            <!-- <h3>Instant Delivery,solution to your needs.</h3> -->
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit"> <img src="static/images/icon3.png" alt="Your Icon"></button>
+        </div>
+        <div class="logbt">
+            <button class="login-button">
+                <i class="fa fa-user" aria-hidden="true">&nbsp;&nbsp;Login</i>
+                <!-- <button class="login-button1">login</button> -->
+            </button>
+            <div class="login-form-container">
+                  <form class="login-form">
+                <h2>Login</h2>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <button type="submit">Login</button>
+                </form>
+            </div>
+            <div class="cart">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </div>
+            <div class="wish">
+                <i class='far fa-heart' aria-hidden="true"></i>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+</header>
+
+
+<!-- 
+<div class="navbar">
+    <ul class="category">
+
+        <div class="navbar-menu">
+            <div class="menu-icon" onclick="toggleSidebar()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+
+        <div class="sidebar" id="sidebar-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <li><a href="{% url 'kitchen' %}">Home/Kitchen's</a></li>
+        <li><a href="{% url 'grosary' %}">Grocery's</a></li>
+        <li><a href="{% url 'electronics' %}">Electronic's</a></li>
+        <li><a href="{% url 'cosmetic' %}">Cosmetic</a></li>
+        <li><a href="{% url 'toys' %}">Toy's and Kid's</a></li>
+        <li><a href="{% url 'dryfruits' %}">Dry Fruit's</a></li>
+    </ul>
+    <div>
+        
+    </div>
+
+</div> -->

@@ -1,0 +1,145 @@
+#product-head {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+#product-slide {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.productslide1 {
+    width: 30%;
+    height: auto;
+    display: flex;
+    /* padding: 10px; */
+    position: relative;
+    justify-content: space-between;
+
+}
+
+.proimg {
+    margin-top: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.proimg img {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.proimg img:hover {
+    border: 1px solid #F7A21A;
+}
+
+.mainproimg {
+    margin-top: 10px;
+    left: 0;
+}
+
+.productslide2 {
+    width: 50%;
+    height: auto;
+    padding: 10px;
+
+}
+
+.productslide3 {
+    width: 20%;
+    height: auto;
+    border: 1px solid silver;
+    border-radius: 20px;
+    margin-right: 10px;
+
+}
+
+.productbox {
+    display: flex;
+}
+
+.box1 {
+    border: 1px solid silver;
+    padding: 10px;
+    height: auto;
+    width: auto;
+    margin: 5px;
+    border-radius: 20px;
+    justify-content: space-between;
+    box-shadow: 1px 1px rgb(194, 180, 155);
+}
+
+/* product slider */
+
+.pro_con {
+    /* width: 100%; */
+    width: auto;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.pro-slider {
+    display: flex;
+    /* Adjust the width based on the number of slides */
+    /* width: 100%; */
+    width: auto;
+    animation: pro_slideAnimation 10s infinite;
+    
+}
+.pro-slider:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+.pro_slide {
+    flex: 0 0 25% 0;
+    /* flex-direction: start; */
+    padding: 20px;
+    margin: 35px;
+    text-align: center;
+   
+}
+
+.pro_slide img {
+    width: auto;
+    border-radius: 5px;
+}
+
+.pro_slide h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.pro_slide p {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-top: 5px;
+}
+
+
+@keyframes pro_slideAnimation {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+} 

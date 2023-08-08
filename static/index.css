@@ -1,0 +1,591 @@
+body {
+    background-color: #F5F5F5;
+}
+
+#carouselExampleSlidesOnly {
+    height: 220px;
+    position: relative;
+}
+
+/* circular-bar */
+#circular-bar {
+    /* margin: 10px; */
+    padding: 10px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #DEDFE2;
+    border-right: 1px solid #DEDFE2;
+
+}
+
+.bar1 h6 {
+    text-align: center;
+    font-size: 15;
+}
+
+.bar1 img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    padding: 6px;
+
+
+}
+
+/* slide1 */
+
+.slide-container {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    max-width: 360px;
+    margin: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    /* background-color: whitesmoke; */
+    background-color: #fff;
+}
+
+.slide-content h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: start;
+    margin-bottom: 5px;
+}
+
+.slide-content a {
+    color: #8174CA;
+    text-decoration: none;
+
+}
+
+.slide-content a:hover {
+    color: burlywood;
+
+}
+
+.slide-info {
+    display: flex;
+    align-items: center;
+    align-items: center;
+}
+
+.slide-offer {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+#first-slide {
+    display: flex;
+    background-color: #F5F5F5;
+    position: relative;
+
+}
+
+.app {
+    border: 2px solid rgb(246, 233, 233);
+    /* display: flex; */
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    /* background-color: #F5F5DB; */
+    background-color: white;
+    max-height: 200px;
+
+}
+
+#extra {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: #F5F5F5;
+
+}
+
+.add {
+    border: 1px solid rgb(246, 233, 233);
+    /* display: flex; */
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    /* background-color: #c2d7e5; */
+    background-color: white;
+    max-height: auto;
+}
+
+#second-slide {
+    display: flex;
+    background-color: #F5F5F5;
+}
+
+.add1 {
+    border: 1px solid rgb(246, 233, 233);
+    /* display: flex; */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(246, 233, 233);
+    /* display: flex; */
+    margin: 10px;
+    /* padding: 10px; */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    /* background-color: #c2d7e5; */
+    background-color: white;
+    max-height: auto;
+
+}
+
+.add1 img {
+    margin-top: 10px;
+
+}
+
+/* top deals */
+#third-slide {
+    width: 100%;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: white;
+
+}
+
+.thirt-container {
+    margin: 10px;
+    padding: 10px;
+    background-color: #F5F5F5;
+
+}
+
+.deal-head {
+    display: flex;
+
+}
+
+.thirt-container h6 {
+    margin-top: 17px;
+    padding: 5px;
+
+}
+
+.thirt-container h6 a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.thirt-container h5 {
+    margin: 10px;
+    padding: 5px;
+    color: black;
+    font-size: x-large;
+    font-style: oblique;
+}
+
+.top-deals {
+    margin: 20px;
+}
+
+.top-deals button {
+    margin: 2px;
+    padding: 5px;
+    color: white;
+    background-color: #CC0C39;
+    border-color: #CC0C39;
+}
+
+.top-deals h6 {
+    color: black;
+    text-align: start;
+
+}
+
+.image-gallery {
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.scrolling-container {
+    display: flex;
+    transition: transform 0.3s ease;
+    /* width: 200%;
+    margin-bottom: -20px; */
+
+}
+
+
+.scrolling-container img {
+    max-width: 100%;
+    margin-right: 20px;
+
+    /* Add spacing between images */
+}
+
+.image-gallery::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+/* product */
+
+#fourth-slide {
+    width: 100%;
+    /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
+    /* padding: 1px; */
+    background-color: #F5F5F5;
+}
+
+.slide-head {
+    display: flex;
+}
+
+.slide-head h6 {
+    margin-top: 17px;
+    padding: 5px;
+
+}
+
+.slide-head h6 a {
+    text-decoration: none;
+    list-style: none;
+    color: rgb(81, 200, 255);
+    font-family: 'Times New Roman', Times, serif;
+    /* border: 1px solid rgb(213, 109, 109);
+    margin: 4px;
+    padding: 8px;
+    background-color: #CC0C39; */
+}
+
+.slide-head h6 a:hover {
+    color: #DEB887;
+    text-decoration: underline;
+
+
+}
+
+.slide-head h5 {
+    margin: 10px;
+    padding: 5px;
+    color: black;
+    font-size: x-large;
+    font-style: oblique;
+}
+
+
+.product-scrolling-bar {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.products {
+    display: inline-flex;
+    /* Use inline-flex for horizontal alignment */
+    padding: 10px;
+    /* Optional: Add padding to create some space around products */
+}
+
+.product-item {
+    flex: 0 0 200px;
+    /* Adjust the width of each product item */
+    background-color: #B9C5FF;
+    margin-right: 10px;
+    /* Add spacing between product items */
+    /* padding: 10px; */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    height: 350px;
+    width: 300px;
+}
+
+/* fifth */
+#fifth-slide {
+    width: 100%;
+    /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
+    /* padding: 1px; */
+    background-color: F5F5F5;
+}
+
+.fifth-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.fifth-slider {
+    display: flex;
+    width: 100%;
+    /* Adjust the width based on the number of slides */
+    animation: slideAnimation 60s infinite;
+}
+
+
+.fifth {
+    flex: 0 0 33.33%;
+    /* Adjust this value based on the number of slides */
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.fifth button {
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* padding: 5px; */
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+    background-color: rgb(203, 48, 48);
+    border: none;
+    text-align: center;
+}
+
+.fifth button a {
+    text-decoration: none;
+}
+
+.fifth img {
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.fifth-content {
+    margin-top: 10px;
+    display: flex;
+}
+
+.fifth-content h3 {
+    /* font-size: 1rem; */
+    color: white;
+    font-size: 14px;
+}
+
+.fifth-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.fifth-content p a {
+    text-decoration: none;
+    color: rgb(203, 48, 48);
+
+}
+
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(0);
+    }
+
+    33.33% {
+        transform: translateX(-100%);
+    }
+
+    66.66% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* sixth */
+
+#sixth-slide {
+    width: 100%;
+    background-color: #F5F5F5;
+}
+
+.slide-head1 {
+    display: flex;
+}
+
+.slide-head1 h6 {
+    margin-top: 17px;
+    padding: 5px;
+
+}
+
+.slide-head1 h6 a {
+    text-decoration: none;
+    list-style: none;
+    color: rgb(81, 200, 255);
+    font-family: 'Times New Roman', Times, serif;
+    /* border: 1px solid rgb(213, 109, 109);
+    margin: 4px;
+    padding: 8px;
+    background-color: #CC0C39; */
+}
+
+.slide-head1 h6 a:hover {
+    color: #DEB887;
+    text-decoration: underline;
+
+
+}
+
+.slide-head1 h5 {
+    margin: 10px;
+    padding: 5px;
+    color: black;
+    font-size: x-large;
+    font-style: oblique;
+}
+
+
+.product-scrolling-bar1 {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    /* Prevent items from wrapping to the next line */
+}
+
+.products1 {
+    display: inline-flex;
+    /* Use inline-flex for horizontal alignment */
+    padding: 20px;
+    /* Optional: Add padding to create some space around products */
+}
+
+.product-item1 {
+    /* flex: 0 0 200px; */
+    /* Adjust the width of each product item */
+    background-color: #B9C5FF;
+    margin-right: 10px;
+    /* Add spacing between product items */
+    /* padding: 10px; */
+    /* border-radius: 5px; */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.product-item1 img {
+    height: 150px;
+    width: 200px;
+}
+
+#seventh-slide {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    background-color: #485769;
+}
+
+/* #seventh-slide h6 {
+    
+} */
+.seventh {
+    text-align: center;
+    color: white;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+.seventh a {
+    text-decoration: none;
+    color: white;
+}
+
+.seventh a:hover {
+    color: #F7A21A;
+}
+
+/* .wrapp {
+    max-width: 1200px;
+}
+.wrapp .caro {
+    white-space: nowrap;
+}
+.caro img{
+    height: 140px;
+    object-fit: cover;
+    width: calc(100%/3);
+} */
+
+.gallery-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery {
+    display: flex;
+    scroll-snap-type: x mandatory;
+}
+
+.gallery img {
+    width: 300px;
+    /* Adjust the image width as needed */
+    height: auto;
+    scroll-snap-align: start;
+    margin-right: 10px;
+    /* Add some spacing between images */
+}
+
+/* Optional: Add navigation arrows */
+.gallery-container::before,
+.gallery-container::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.gallery-container::before {
+    left: 0;
+}
+
+.gallery-container::after {
+    right: 0;
+}
+
+.slider-container12 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider12 {
+    display: flex;
+    transition: transform 0.3s ease;
+    -webkit-user-drag: none;
+    /* Disable dragging on desktop */
+}
+
+.slide12 {
+    flex: 0 0 100%;
+}
+
+.slide12 img {
+    width: 100%;
+    height: auto;
+}
